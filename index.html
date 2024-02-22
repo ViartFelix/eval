@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="fonts/open-sans.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/slider.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -14,19 +16,22 @@
     </header>
     <main>
         <div class="toolbar">
-            <a href="#" class="blue" id="toolbar-toggle">Barre d'outils</a>
+            <a href="#" class="blue" id="toolbar-toggle"><i class="fa-solid fa-arrow-down"></i>Barre d'outils</a>
 
             <div class="target-buttons hide">
-                <a href="#" id="slider-previous">Avant</a>
-                <a href="#" data-isRunning="false" id="slider-toggle">Démarer</a>
-                <a href="#" id="slider-next">Après</a>
-                <a href="#" id="slider-random">Random</a>
+                <button href="#" class="blue" id="slider-previous"><i class="fa-solid fa-chevron-left"></i></button>
+                <button href="#" class="blue" data-isRunning="false" id="slider-toggle"><i class="fa-solid fa-play"></i></button>
+                <button href="#" class="blue" id="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button href="#" class="blue" id="slider-random"><i class="fa-solid fa-shuffle"></i></button>
             </div>
         </div>
 
         <figure class="slider" id="slider">
-            <img data-index="0"/>
-            <h2 id="image-title">title</h2>
+            <p class="photo-container">
+                <img data-index="0" class="photo"/>
+            </p>
+            
+            <h2 class="blue" id="image-title">Beautiful image</h2>
         </figure>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

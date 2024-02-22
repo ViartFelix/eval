@@ -1,4 +1,4 @@
-const imgShow = $("#slider img")
+const imgShow = $("#slider p img")
 const imgTitle = $("#slider #image-title")
 const minIndex = 1;
 const maxIndex = 6;
@@ -96,11 +96,15 @@ function handleToggleCaroussel() {
     isSliderRunning = !isSliderRunning
 
     if(isSliderRunning) {
+        $("#slider-toggle i").attr("class", "fa-solid fa-pause")
+
         carouselBearer = setInterval(()=>{
             $("#slider-next").click()
         }, carouselTime)
     }
     else {
+        $("#slider-toggle i").attr("class", "fa-solid fa-play")
+        
         clearInterval(carouselBearer)
     }
 
