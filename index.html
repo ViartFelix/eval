@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Sliders</title>
+
+    <link rel="stylesheet" href="fonts/open-sans.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <header>
+        <h1 class="title blue">Sliders, les mondes parallèles ;-)</h1>
+    </header>
+    <main>
+        <div class="toolbar">
+            <a href="#" class="blue" id="toolbar-toggle">Barre d'outils</a>
+
+            <div class="target-buttons hide">
+                <a href="#" id="slider-previous">Avant</a>
+                <a href="#" data-isRunning="false" id="slider-toggle">Démarer</a>
+                <a href="#" id="slider-next">Après</a>
+                <a href="#" id="slider-random">Random</a>
+            </div>
+        </div>
+
+        <figure class="slider" id="slider">
+            <img data-index="0"/>
+            <h2 id="image-title">title</h2>
+        </figure>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
